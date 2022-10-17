@@ -27,3 +27,7 @@ body {
   background-color: var(--bg-color) !important;
 }
 
+.title {
+  color: var(--dark-color) !important;
+}
+

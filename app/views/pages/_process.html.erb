@@ -1,0 +1,18 @@
+<div class='columns is-mobile'>
+  <div class='column is-10 is-offset-1 has-text-centered'>
+    <div class='title is-1'>
+      <%= t('main.process.title') %>
+    </div>
+    <div class='columns'>
+      <% t('main.process.steps').each do |step| %>
+        <div class='column p-5'>
+          <figure class="image is-96x96 container">
+            <%= image_tag step[:image] %>
+          </figure>
+          <p class='is-size-4'><%= step[:description_html].html_safe %></p>
+        </div>
+      <% end %>
+    </div>
+    <%= render 'cta_button' %>
+  </div>
+</div>
