@@ -30,4 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  main:
+    button_title: "Be called back"
+    home:
+      title_html: "Affordable<br>handmade<br>drip art<br>tailored to<br>your own place"
