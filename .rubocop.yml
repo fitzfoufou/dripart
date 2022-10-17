@@ -1,0 +1,20 @@
+# Enabling the new cops
+AllCops:
+  NewCops: enable
+  # Excluding specific files
+  # Exclude:
+  # - 'bin/{bundle,yarn,spring}'
+
+# Adding exceptions to Rubocop's offenses
+Layout/EndOfLine:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/GlobalStdStream:
+  Enabled: false
+
