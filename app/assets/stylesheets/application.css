@@ -27,7 +27,11 @@ body {
   background-color: var(--bg-color) !important;
 }
 
-.title {
+.title, .subtitle, .card {
   color: var(--dark-color) !important;
+}
+
+.has-background-custom {
+  background-color: var(--dark-color) !important;
 }
 

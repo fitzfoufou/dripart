@@ -1,0 +1,33 @@
+<div class='columns has-background-custom is-mobile'>
+  <div class='column is-10 is-offset-1'>
+    <br>
+    <br>
+    <div class='title is-1 has-text-centered has-text-white'>
+      <%= t('main.products.title') %>
+    </div>
+    <br>
+
+    <div class='columns'>
+      <% t('main.products.items').each do |item| %>
+        <div class='column p-5'>
+          <div class='card has-text-centered'>
+            <div class='card-image'>
+              <figure class='image'>
+                <%= image_tag item[:image] %>
+              </figure>
+            </div>
+            <div class='card-content'>
+              <p class='title'><%= item[:title] %></p>
+              <p class='subtitle'><%= item[:subtitle] %></p>
+              <div class='content'><%= item[:description] %></div>
+            </div>
+            <footer class='card-footer'>
+              <h3 class='title card-footer-item'><%= item[:price] %></h3>
+            </footer>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <br>
+  </div>
+</div>

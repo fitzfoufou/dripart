@@ -43,4 +43,22 @@ en:
         image: 'badge2_500x500-min.png'
       - description_html: 'Once over, the painting is delivered directly to your place in Montréal.<br>If satisfied, you may proceed to the payment'
         image: 'badge3_500x500-min.png'
+    products:
+      title: 'How does it look?'
+      items:
+      - title: 'Small frames'
+        subtitle: 'Below 20" (50cm)'
+        description: 'Perfect above a dresser or a desk, it brings colors wherever it is'
+        price: '145 CAD'
+        image: 'small_frame_squared_400x400-min.png'
+      - title: 'Medium frames'
+        subtitle: 'Below 40" (100cm)'
+        description: 'Great for the living room or a large wall in a room, it brings cachet'
+        price: '295 CAD'
+        image: 'medium_frame_squared_400x400-min.png'
+      - title: 'Large frames'
+        subtitle: 'Above 40" (100cm)'
+        description: 'On large walls, it gives a unique touch and soul to your living room'
+        price: 'To be discussed'
+        image: 'large_frame_squared_400x400-min.png'
     
