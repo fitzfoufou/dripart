@@ -1,3 +1,3 @@
 class PagesController < ApplicationController
-    layout 'application'
+  layout 'application'
 end
