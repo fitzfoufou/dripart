@@ -61,4 +61,7 @@ en:
         description: 'On large walls, it gives a unique touch and soul to your living room'
         price: 'To be discussed'
         image: 'large_frame_squared_400x400-min.png'
-    
+    team:
+      title: 'Who is the artist?'
+      image: 'artist_picture_500x500-min.png'
+      description_html: 'My name is François, I live in Montréal Villeray. I have fallen in love with drip art when I was 20. Since then I have painted many, many drip art paintings for friends and for myself. I have decided to make it a business to spread this beautiful art all around my community.<br>I just cannot wait meeting you to discuss your new art project.'
