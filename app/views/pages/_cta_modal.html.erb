@@ -1,0 +1,23 @@
+<div id='cta-modal' class='modal p-2'>
+  <div class='modal-background'></div>
+
+  <div class='modal-card'>
+    <header class='modal-card-head has-background-custom has-text-centered'>
+      <p class='modal-card-title has-text-white'><%= t('cta_modal.title') %></p>
+    </header>
+    <section class='modal-card-body'>
+      <% t('cta_modal.form_fields').each do |field| %>
+        <div class='field'>
+          <label class='label has-text-weight-normal'><%= field[:title] %></label>
+          <div class='control'>
+            <input class='input' type='text' placeholder='<%= field[:placeholder] %>'>
+          </div>
+        </div>
+      <% end %>
+    </section>
+    <footer class='modal-card-foot is-flex-direction-column p-4'>
+      <button class='button is-primary is-medium'><%= t('cta_modal.submit') %></button>
+    </footer>
+  </div>
+  <button class='modal-close is-large' aria-label='close'></button>
+</div>

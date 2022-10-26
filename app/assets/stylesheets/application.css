@@ -21,13 +21,13 @@
   --bg-color: #ECF0F1;
 }
 
-body {
+body, .modal-card-body {
   font-family: 'Roboto', sans-serif !important; 
   color: var(--dark-color) !important;
   background-color: var(--bg-color) !important;
 }
 
-.title, .subtitle, .card {
+.title, .subtitle, .card, .label {
   color: var(--dark-color) !important;
 }
 

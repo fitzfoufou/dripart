@@ -68,3 +68,15 @@ en:
     footer:
       guarantee: '100% Satisfaction Guaranteed'
       company: '©2022, LivingDrippingRoom'
+  cta_modal:
+    title: 'Be called back to understand your needs'
+    form_fields:
+    - title: 'On what phone number?'
+      placeholder: '+1 456 567 6752'
+    - title: 'What time would suit you best?'
+      placeholder: 'In the evenings from 6pm'
+    - title: 'In order to identify your timezone, in which city do you live?'
+      placeholder: 'Montréal'
+    submit: 'Send'
+    cancel: 'Cancel'
+  
