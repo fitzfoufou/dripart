@@ -1,5 +1,5 @@
 # docker-compose.yml: inspired from https://docs.docker.com/samples/rails/
-version: "3.9"
+version: '3.9'
 services:
   db:
     image: postgres
@@ -14,6 +14,13 @@ services:
     volumes:
       - .:/dripart
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       - db
+    links:
+      - chrome-server
+  # Container with a chrome browser to emulate the system tests
+  chrome-server:
+    image: selenium/standalone-chrome:96.0
+    ports:
+      - '7900:7900'
