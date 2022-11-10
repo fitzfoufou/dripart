@@ -12,5 +12,9 @@ RSpec.describe 'routes', type: :routing do
     it 'routes /users/new to relevant controller method' do
       expect(post('/users')).to route_to('users#create')
     end
+
+    it 'routes /users with get to users#new' do
+      expect(get('/users')).to route_to('users#new')
+    end
   end
 end

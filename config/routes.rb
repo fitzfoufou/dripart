@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#main'
 
   resources :users, only: %i[new create]
+  # Routing 'users' to 'users#new' to avoid crash in page refresh after form validation error
+  get 'users', to: 'users#new'
 end
