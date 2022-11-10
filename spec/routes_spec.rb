@@ -16,5 +16,9 @@ RSpec.describe 'routes', type: :routing do
     it 'routes /users with get to users#new' do
       expect(get('/users')).to route_to('users#new')
     end
+
+    it 'routes to #show' do
+      expect(get: '/users/1').to route_to('users#show', id: '1')
+    end
   end
 end
