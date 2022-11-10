@@ -70,6 +70,9 @@ en:
       company: '©2022, LivingDrippingRoom'
   new_user:
     title: 'Start creating'
-    submit: 'Go!'
+    submit: 'Lets go!'
     time_zone: 'Please specify time zone if not Eastern Standard Time'
+    errors_message: 'Please fill in the missing fields:'
+    home_button: 'Home'
+
   

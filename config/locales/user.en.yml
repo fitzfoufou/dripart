@@ -7,6 +7,16 @@ en:
         availability: 'When are you generaly available? *'
         house_description: 'Describe your space (living room/chamber, main furniture, main colors...)'
         art_style: 'In one sentence or less, what is your style?'
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: 'Your name is required'
+            phone_number:
+              blank: 'Your phone number is required'
+            availability:
+              blank: 'Your availabilities are required'
   helpers:
     placeholder:
       user:
