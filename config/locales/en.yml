@@ -68,3 +68,8 @@ en:
     footer:
       guarantee: '100% Satisfaction Guaranteed'
       company: '©2022, LivingDrippingRoom'
+  new_user:
+    title: 'Start creating'
+    submit: 'Go!'
+    time_zone: 'Please specify time zone if not Eastern Standard Time'
+  

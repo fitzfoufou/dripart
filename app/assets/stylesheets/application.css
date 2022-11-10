@@ -27,8 +27,12 @@ body {
   background-color: var(--bg-color) !important;
 }
 
-.title, .subtitle, .card {
+.title, .subtitle, .card, .label {
   color: var(--dark-color) !important;
+}
+
+.label {
+  font-weight: 500 !important;
 }
 
 .has-background-custom {

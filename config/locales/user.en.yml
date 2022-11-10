@@ -1,0 +1,16 @@
+en:
+  activerecord:
+    attributes:
+      user:
+        name: "What's your name? *"
+        phone_number: "What's your phone number? *"
+        availability: 'When are you generaly available? *'
+        house_description: 'Describe your space (living room/chamber, main furniture, main colors...)'
+        art_style: 'In one sentence or less, what is your style?'
+  helpers:
+    placeholder:
+      user:
+        phone_number: '+1 456 567 6752'
+        availability: 'In the evenings from 6pm'
+        house_description: 'I am looking for an art canvas for my living room, above my dark green sofa.'
+        art_style: 'Contemporary, street art, bright colors....'

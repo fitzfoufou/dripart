@@ -1,0 +1,55 @@
+<div class='columns is-mobile m-0'>
+  <!-- Different form layout between mobile and tablet/desktop for better reading -->
+  <div class='column is-8-tablet is-offset-2-tablet is-10-mobile is-offset-1-mobile'>
+    <div class='title is-1 has-text-centered'>
+      <br>
+      <%= t('new_user.title') %>
+    </div>
+    <br>
+    <%= form_with model: @user do |form| %>
+      <div class='columns'>
+        <div class='field column'>  
+          <%= form.label :name, class: 'label' %>
+          <div class='control'>
+            <%= form.text_field :name, class: 'input' %>
+          </div>
+        </div>
+      </div>
+      <div class='columns'>
+        <div class='field column'>  
+          <%= form.label :house_description, class: 'label' %>
+          <div class='control'>
+            <%= form.text_area :house_description, class: 'textarea', rows: '2', placeholder: true %>
+          </div>
+        </div>
+      </div>
+      <div class='columns'>
+        <div class='field column'>  
+          <%= form.label :art_style, class: 'label' %>
+          <div class='control'>
+            <%= form.text_area :art_style, class: 'textarea', rows: '2', placeholder: true %>
+          </div>
+        </div>
+      </div>
+      <div class='columns'>
+        <div class='field column is-6'>  
+          <%= form.label :phone_number, class: 'label' %>
+          <div class='control'>
+            <%= form.text_field :phone_number, class: 'input', placeholder: true %>
+          </div>
+        </div>
+        <div class='field column is-6'>  
+          <%= form.label :availability, class: 'label' %>
+          <div class='control'>
+            <%= form.text_field :availability, class: 'input', placeholder: true %>
+          </div>
+          <p class='help'><%= t('new_user.time_zone') %></p>
+        </div>
+      </div>
+      <div class='has-text-centered'>
+        <%= form.submit t('new_user.submit'), class: 'button is-primary is-large' %>
+      </div>
+    <% end %>
+    <br>
+  </div>
+</div>
