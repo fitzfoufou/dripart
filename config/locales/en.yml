@@ -78,5 +78,7 @@ en:
     title: "That's it!"
     rewarding: 'You have accomplished the first step in creating your first drip art tailored to you.'
     next_step: 'Our artist will soon get in touch with you to better understand your needs.'
-
+  lead_mailer:
+    from: 'contact@dripart.com'
+    to: 'francois.fitzpatrick@gmail.com'
   
