@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/BlockLength
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
@@ -62,7 +63,21 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "dripart_production"
 
-  config.action_mailer.perform_caching = false
+  # Send mail through Gmail SMTP
+  config.action_mailer.delivery_method = :smtp
+  # TODO: change host name
+  config.action_mailer.default_url_options = { host: 'example.com' }
+
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    user_name: 'francois.fitzpatrick@gmail.com',
+    password: Rails.application.credentials.gmail_app_password,
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_caching = true
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -118,3 +133,4 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 end
+# rubocop:enable Metrics/BlockLength
