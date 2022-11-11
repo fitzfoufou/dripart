@@ -47,5 +47,12 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe '#send_lead' do
+    it 'sends an email' do
+      user = create(:user)
+      expect { user.send_lead }.to change { ActionMailer::Base.deliveries.count }.by(1)
+    end
+  end
 end
 # rubocop:enable Metrics/BlockLength
