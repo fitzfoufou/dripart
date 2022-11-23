@@ -68,3 +68,15 @@ en:
     footer:
       guarantee: '100% Satisfaction Guaranteed'
       company: '©2022, LivingDrippingRoom'
+  new_user:
+    title: 'Start creating'
+    submit: 'Lets go!'
+    time_zone: 'Please specify time zone if not Eastern Standard Time'
+    errors_message: 'Please fill in the missing fields:'
+    home_button: 'Home'
+  show_user:
+    title: "That's it!"
+    rewarding: 'You have accomplished the first step in creating your first drip art tailored to you.'
+    next_step: 'Our artist will soon get in touch with you to better understand your needs.'
+
+  

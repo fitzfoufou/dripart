@@ -25,10 +25,15 @@ body {
   font-family: 'Roboto', sans-serif !important; 
   color: var(--dark-color) !important;
   background-color: var(--bg-color) !important;
+  min-height: 100vh;
 }
 
-.title, .subtitle, .card {
+.title, .subtitle, .card, .label {
   color: var(--dark-color) !important;
+}
+
+.label {
+  font-weight: 500 !important;
 }
 
 .has-background-custom {
