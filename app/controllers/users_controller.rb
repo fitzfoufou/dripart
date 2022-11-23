@@ -10,6 +10,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        # Send mail with user information for lead followup
+        @user.send_lead
+        # Redirect to a thanks page
         format.html { redirect_to user_path(@user) }
       else
         format.html { render :new }
