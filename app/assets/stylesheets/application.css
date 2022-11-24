@@ -36,6 +36,10 @@ body {
   font-weight: 500 !important;
 }
 
+.bigger-size {
+  font-size: 4rem !important;
+}
+
 .has-background-custom {
   background-color: var(--dark-color) !important;
 }
