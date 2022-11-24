@@ -37,11 +37,11 @@ en:
     process:
       title: 'How does it work?'
       steps:
-      - description_html: 'Get a call from the artist to know the size and the colors you wish for the painting.<br>The artist can give you advice if needed'
+      - description_html: 'Consult with the artist to determine size and colors.<br>Proceed with payment then'
         image: 'badge1_500x500-min.png'
-      - description_html: 'The painted is being (hand)made, the magic is happening<br>In little less than<br><strong>5 days</strong>'
+      - description_html: 'The magic is happening...<br>It can take between<br>2 to 5 weeks'
         image: 'badge2_500x500-min.png'
-      - description_html: 'Once over, the painting is delivered directly to your place in Montréal.<br>If satisfied, you may proceed to the payment'
+      - description_html: 'Once ready, the painting is delivered directly to your place in Montréal'
         image: 'badge3_500x500-min.png'
     products:
       title: 'How does it look?'
