@@ -1,27 +1,31 @@
 # Tailored Drip Art
 
-### Description: Simple website to get in touch with an artist that can paint affordable drip art, tailored to your own place - [link](https://www.linkedin.com/in/francoisfitzpatrick/)
+Description: This is a website to help house owners find tailored drip art for their houses - [link](https://art-tailored.com) :smile:
 
-### Main Stack: 
-* Ruby:     3.1.2
-* Rails:    6.1.7
-* Postgres 
-* Docker / Docker compose
-* Bulma as CSS Framework
-* Bundle:   2.1.4
+## Stack and requirements :brain:
 
-### Key additional Rails gems:
-* Rspec
-* Rubocop
-* Capybara
-* Factory Bot
+### Stack
+* Docker Compose: Containerization
+* RubyOnRails: Back-end framework (Rails: 6.1.7 - Ruby: 3.1.2)
+* Postgre: Database
+* Rspec: Testing framework
+* Bulma: CSS framework
 
-### How to Install and Run the Project
-1. Clone project
-2. Build docker: docker compose build
-3. Run project: docker compose up
-4. Create database: docker compose run web rake db:create
-5. Check out: localhost:3000
+### Requirements 
+* Docker compose
+* Docker
 
-### How to test the app
-In progress
+## How to launch app :mechanical_arm:
+
+- Clone project
+- Go to project folder: `cd dripart/`
+- Create docker image and containers : `docker compose build`
+- Launch containers in a project terminal : `docker compose up`
+- In another project terminal, create database and add migrations: `docker compose run --rm web rails db:create db:migrate`
+- Open browser and go to: `http://localhost:3000`
+
+## How to test app :test_tube:
+
+- Create database, add migrations and seeds in Test: `docker compose run --rm web rails db:create db:migrate db:seed RAILS_ENV=test`
+- Run rspec tests: `docker compose run --rm web rspec spec`
+- To check linter, run rubocop: `docker compose run --rm web rubocop`
