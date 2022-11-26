@@ -7,13 +7,18 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update -y && apt-get install yarn -y
 
+# Create (if necessary) and Define Working directory
+RUN mkdir -p /dripart
 WORKDIR /dripart
-COPY Gemfile /dripart/Gemfile
-COPY Gemfile.lock /dripart/Gemfile.lock
 
 # Install & run bundler
-RUN gem install bundler:'~> 2.1.4'
+COPY Gemfile .
+COPY Gemfile.lock .
+RUN gem install bundler
 RUN bundle install
+
+# Copy project on docker
+COPY . .
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
@@ -22,5 +27,4 @@ ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
 # Configure the main process to run when running the image
-CMD rails server -b 0.0.0.0
-# CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
