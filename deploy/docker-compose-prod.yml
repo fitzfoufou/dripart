@@ -1,0 +1,17 @@
+# docker-compose.yml: inspired from docker deployment tutorial 
+# https://www.youtube.com/watch?v=FVNBdylX5po&ab_channel=ProgrammingHumanWay
+version: '3.9'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER:      ${DB_USER}
+      POSTGRES_PASSWORD:  ${DB_PASSWORD}
+  web:
+    image: fitzfoufou/dripart:v1
+    ports:
+      - '80:3000'
+    environment:
+      RAILS_ENV:  ${RAILS_ENV}
+    depends_on:
+      - db

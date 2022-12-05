@@ -4,6 +4,9 @@ require 'active_support/core_ext/integer/time'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # AWS setup allowing access to IP
+  config.hosts << ENV['PRODUCTION_HOST']
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -29,7 +32,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = 'http://assets.example.com'
@@ -66,7 +69,7 @@ Rails.application.configure do
   # Send mail through Gmail SMTP
   config.action_mailer.delivery_method = :smtp
   # TODO: change host name
-  config.action_mailer.default_url_options = { host: 'example.com' }
+  config.action_mailer.default_url_options = { host: ENV['PRODUCTION_HOST'] }
 
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
