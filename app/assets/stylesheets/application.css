@@ -21,6 +21,11 @@
   --bg-color: #ECF0F1;
 }
 
+html {
+  /* To prevent scroll bar from taking space */
+  overflow-y: scroll !important;
+}
+
 body {
   font-family: 'Roboto', sans-serif !important; 
   color: var(--dark-color) !important;
@@ -36,8 +41,16 @@ body {
   font-weight: 500 !important;
 }
 
-.bigger-size {
-  font-size: 4rem !important;
+.custom-responsive-size {
+  font-size: 3rem !important;
+  margin: 3rem 0 3rem 0;
+}
+
+@media (min-width: 600px) {
+  .custom-responsive-size {
+    font-size: 4rem !important;
+    margin: 6rem 0 3rem 0;
+  }
 }
 
 .has-background-custom {
