@@ -21,6 +21,11 @@
   --bg-color: #ECF0F1;
 }
 
+html {
+  /* To prevent scroll bar from taking space */
+  overflow-y: scroll !important;
+}
+
 body {
   font-family: 'Roboto', sans-serif !important; 
   color: var(--dark-color) !important;
