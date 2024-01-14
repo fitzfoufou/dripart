@@ -1,6 +1,10 @@
 # Tailored Drip Art
 
-Description: This is a website to help house owners find tailored drip art for their houses - [link](https://art-tailored.com) :smile:
+Description: This is a website to help house owners find tailored drip art for their houses
+
+See video of website: https://github.com/fitzfoufou/dripart/assets/10744887/b8109d38-4aef-42e8-ac9f-a9d2c27f5b59
+
+Previously hosted on AWS at: https://art-tailored.com
 
 ## Stack and requirements :brain:
 
